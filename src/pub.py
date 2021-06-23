@@ -3,3 +3,5 @@ class Pub:
         self.name = name
         self.counter = counter
         self.drinks = []
+
+    
