@@ -26,3 +26,5 @@ class TestCustomer(unittest.TestCase):
         self.assertEqual(30, self.pub.counter)
     
 
+    def test_has_drunkness_level(self):
+        self.assertEqual(0, self.customer.drunkenness)
