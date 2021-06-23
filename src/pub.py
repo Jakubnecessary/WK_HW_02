@@ -4,4 +4,5 @@ class Pub:
         self.counter = counter
         self.drinks = []
 
-    
+    def increase_counter(self, counter):
+        self.counter += counter
