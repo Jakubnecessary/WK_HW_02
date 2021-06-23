@@ -25,9 +25,8 @@ class TestCustomer(unittest.TestCase):
             self.assertEqual(70, self.customer.wallet)
             self.assertEqual(30, self.pub.counter)
             self.assertEqual(80, self.customer.drunkenness)
-            # self.customer.reduce_wallet(self.drink.price)
-            # self.pub.increase_counter(self.drink.price)
-    
-
+            
     def test_has_drunkness_level(self):
         self.assertEqual(0, self.customer.drunkenness)
+
+

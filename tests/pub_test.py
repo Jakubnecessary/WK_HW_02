@@ -20,3 +20,6 @@ class TestPub(unittest.TestCase):
 
     def test_pub_check_age(self):
         self.assertEqual(True, self.customer.check_age())
+
+    def tes_pub_refuse_service(self):
+        self.assertEqual(True, self.pub.refuse_service(self.customer))
