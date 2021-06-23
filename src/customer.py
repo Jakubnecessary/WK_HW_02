@@ -8,8 +8,9 @@ class Customer:
         self.wallet -= amount
 
     def buy_drink(self, drink):
-        self.reduce_wallet(drink.price)
-        self.pub.increase_counter(drink.price)
+        if self.customer.check_age():
+            self.reduce_wallet(drink.price)
+            self.pub.increase_counter(drink.price)
 
     def check_age(self):
         if self.age >= 18:

@@ -6,7 +6,7 @@ from src.drink import *
 class TestCustomer(unittest.TestCase):
     def setUp(self):
         self.customer = Customer("Nathan", 100, 20)
-        self.drink = Drink("Absinth", 30)
+        self.drink = Drink("Absinth", 30, 80)
         self.pub = Pub("Starbar", 0)
 
     def test_customer_has_name(self):
@@ -24,3 +24,5 @@ class TestCustomer(unittest.TestCase):
         self.pub.increase_counter(self.drink.price)
         self.assertEqual(70, self.customer.wallet)
         self.assertEqual(30, self.pub.counter)
+    
+
